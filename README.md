@@ -1,2 +1,2 @@
 # jonas_daily_questions
-My good friend jonathan;s daily programming question
+My good friend Jonathan's daily programming question
