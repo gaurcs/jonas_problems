@@ -1,0 +1,1 @@
+Write a queue that can use push, pop, peek using only stacks. The stacks have the same functions push, pop, or peek.
