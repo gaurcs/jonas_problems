@@ -1,0 +1,9 @@
+Given a sequence of events, return the best sequence to do such that dependencies aren't conflicting.
+Example:
+A->B->C->F->G
+Z->B->F->P
+
+
+Should give:
+A->B->Z->C->F->P->G (There are multiple valid combinations.)
+

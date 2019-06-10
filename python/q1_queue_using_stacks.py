@@ -44,6 +44,23 @@ class Test(unittest.TestCase):
 		self.assertEqual(q.stack_2,[13,11,9])
 		self.assertEqual(q.pop(),9)
 
+	def test_jon(self):
+		q = Queue()
+		q.push(1)
+		q.push(2)
+		q.push(3)
+		self.assertEqual(q.pop(), 1)
+		q.push(4)
+		q.push(5)
+		self.assertEqual(q.pop(), 2)
+		q.push(6)
+		self.assertEqual(q.pop(), 3)
+		q.push(7)
+		self.assertEqual(q.pop(), 4)
+		self.assertEqual(q.pop(), 5)
+		self.assertEqual(q.pop(), 6)
+		self.assertEqual(q.pop(), 7)
+
 if __name__ == '__main__':
 	unittest.main()
 
