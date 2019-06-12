@@ -37,7 +37,10 @@ class Test(unittest.TestCase):
 	([1,1,1], False),
 	([1,2,3,4,5,6], True),
 	([6,5,4,3,2,1], False),
-	([6,5,4,3,2,1,0,2,4], True)]
+	([6,5,4,3,2,1,0,2,4], True),
+	([1,2,1], False),
+	([6,7,4,5,2,3,1], False),
+	([6,7,4,5,2,3,1,4], True)]
 
 	def test_increasing_order(self):
 		for [test_list, expected] in self.data:
