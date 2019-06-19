@@ -1,0 +1,11 @@
+Given a number n. Write a function to create a list of all possible
+valid parenthesis.
+
+For example: n = 2
+
+return:
+["(())", "()()"]
+
+n = 3
+["((()))", "(()())", "()()()", "()(())","(())()"]
+
