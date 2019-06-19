@@ -37,16 +37,28 @@ def get_events_wo_dependencies(events, graph):
     return events_wo_dependencies
 
 
-if __name__ == '__main__':
-	graph = {
+ 
+class Test(unittest.TestCase):
+ 
+    def setUp(self):
+        self.graph = {
+        'Z' : ['B'],
         'A' : ['B'],
-        'B' : ['C','F','P'],
+        'B' : ['C','F'],
         'C' : ['F'],
-        'F' : ['G'],
+        'F' : ['G','P'],
         'P' : [],
         'G' : []
         }
-	print(best_sequence(graph))
+        self.expected_sequence = ['A', 'Z', 'B','C', 'F', 'P', 'G']
+
+
+    def test_best_sequence(self):
+        actual_sequence = best_sequence(self.graph)
+        self.assertEqual(actual_sequence, self.expected_sequence)
+
+if __name__ == '__main__':
+	unittest.main()
 
 
 
