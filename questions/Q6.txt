@@ -1,0 +1,10 @@
+given a target number x and an array with unique values,
+Return an array with all possible combinations of the array that sum up to the target x.
+
+Example:
+target:3
+array: [1,2,3]
+
+return: [(1,1,1), (1,2), (3)]
+
+
